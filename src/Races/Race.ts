@@ -1,13 +1,13 @@
 abstract class Race {
-  constructor(private _name:string, private _dexterity:number) {}
+  constructor(readonly name:string, readonly dexterity:number) {}
 
-  get name():string {
-    return this._name;
-  }
+  // get name():string {
+  //   return this._name;
+  // }
   
-  get dexterity():number {
-    return this._dexterity;
-  }
+  // get dexterity():number {
+  //   return this._dexterity;
+  // }
   
   abstract get maxLifePoints():number;
 
