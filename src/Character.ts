@@ -79,7 +79,7 @@ class Character implements Fighter {
   }
 
   attack(enemy: Fighter): void {
-    console.log(`returned: ${enemy.strength}`, this._lifePoints);
+    console.log(`returned: ${enemy.strength} seus pontos: ${this._lifePoints}`);
   }
 
   levelUp(): void {
@@ -97,7 +97,7 @@ class Character implements Fighter {
   }
 
   special(): void {
-    console.log(this._name);
+    console.log(`${this._name} lançou o poder especial`);
   }
 }
 
